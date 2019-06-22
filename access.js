@@ -1,7 +1,7 @@
 
 
 function getAccess(decrypt,access){
-    document.write('<script src="https://cdn.bootcss.com/jsencrypt/3.0.0-beta.1/jsencrypt.js"></script>');
+    // document.write('<script src="https://cdn"></script>');
     // var JSElement = document.createElement("script");
     // JSElement.setAttribute("type", "text/javascript");
     // JSElement.setAttribute("src", "katex.js");
@@ -15,7 +15,5 @@ function getAccess(decrypt,access){
     encrypted = encrypted.replace(new RegExp('#', "g"), pwd[8]).replace(new RegExp('\\$', "g"), pwd.length % 10);
     decrypt.setPrivateKey('-----BEGIN RSA PRIVATE KEY-----' + PRIVATE_KEY + '-----END RSA PRIVATE KEY-----');
     var uncrypted = decrypt.decrypt(encrypted);
-        console.log('加密后数据:%o', encrypted);
-        console.log('解密后数据:%o', uncrypted);
     return uncrypted;
 }
