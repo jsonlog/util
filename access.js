@@ -1,11 +1,15 @@
-
-
-function getAccess(decrypt,access){
-    // document.write('<script src="https://cdn"></script>');
+    document.write("<script language=javascript src=" + "jsencrypt.js" + "></script>");
     // var JSElement = document.createElement("script");
     // JSElement.setAttribute("type", "text/javascript");
     // JSElement.setAttribute("src", "katex.js");
     // document.body.appendChild(JSElement);
+    // document.getElementsByTagName('head')[0].appendChild(script);
+
+function getAccess(access,decrypt){
+    if(decrypt){}
+    else{
+        decrypt = new JSEncrypt();
+    }
 
     var pwd = access.split("");
     // alert(pwd);
