@@ -1,13 +1,14 @@
-    document.write("<script language=javascript src=" + "jsencrypt.js" + "></script>");
+document.write("<script language=javascript src=" + "https://raw.githack.com/jsonlog/util/master/jsencrypt.js" + "></script>");
     // var JSElement = document.createElement("script");
     // JSElement.setAttribute("type", "text/javascript");
     // JSElement.setAttribute("src", "katex.js");
     // document.body.appendChild(JSElement);
     // document.getElementsByTagName('head')[0].appendChild(script);
+// import JSEncrypt from 'jsencrypt.js'
 
 function getAccess(access,decrypt){
     if(decrypt){}
-    else{
+    else {
         decrypt = new JSEncrypt();
     }
 
